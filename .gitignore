@@ -2,3 +2,7 @@
 
 build/**/*
 .gradle/*/taskArtifacts/**/*
+
+out/**/*
+
+src/main/resources/application.conf

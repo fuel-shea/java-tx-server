@@ -38,6 +38,7 @@ public final class WebSocketServer {
     static final int PORT = Integer.parseInt(System.getProperty("port", SSL ? "8443" : "8080"));
 
     public static void main(String[] args) throws Exception {
+
         final SslContext sslCtx;
         if (SSL) {
             SelfSignedCertificate ssc = new SelfSignedCertificate();
@@ -58,7 +59,7 @@ public final class WebSocketServer {
 
             Channel ch = b.bind(PORT).sync().channel();
 
-            System.out.println("Open your web browser and naviage to" +
+            System.out.println("Open your web browser and naviage to " +
                     (SSL ? "https" : "http") + "://127.0.0.1:" + PORT + "/"
             );
 

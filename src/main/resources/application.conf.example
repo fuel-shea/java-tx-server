@@ -1,0 +1,2 @@
+mongoUri="mongodb://localhost:27017/grantoo_site_development"
+mongoDB=grantoo_site_development
